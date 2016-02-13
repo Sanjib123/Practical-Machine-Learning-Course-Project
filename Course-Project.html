@@ -55,6 +55,10 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 
 
+<div id="link-to-github-and-rpubs" class="section level3">
+<h3>Link to Github and RPubs</h3>
+<p>Github: <a href="https://github.com/kiramipt/Practical-Machine-Learning-Course-Project">https://github.com/kiramipt/Practical-Machine-Learning-Course-Project</a><br /> RPubs: <a href="http://rpubs.com/kirillmipt/practical_machine_learning">http://rpubs.com/kirillmipt/practical_machine_learning</a></p>
+</div>
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
 <p>Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self-movement - a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website here: <a href="http://groupware.les.inf.puc-rio.br/har">http://groupware.les.inf.puc-rio.br/har</a> (see the section on the Weight Lifting Exercise Dataset).</p>
@@ -122,13 +126,13 @@ res_rand_tree   &lt;- confusionMatrix(pred_dec_tree, sub_testing_data$classe)
 res_comp &lt;- data.frame(res_rand_forest$overall, res_rand_tree$overall)
 res_comp</code></pre>
 <pre><code>##                res_rand_forest.overall res_rand_tree.overall
-## Accuracy                     0.9946982          7.157423e-01
-## Kappa                        0.9932928          6.372343e-01
-## AccuracyLower                0.9922412          7.028901e-01
-## AccuracyUpper                0.9965339          7.283371e-01
+## Accuracy                     0.9963295          7.481648e-01
+## Kappa                        0.9953570          6.810523e-01
+## AccuracyLower                0.9942053          7.357686e-01
+## AccuracyUpper                0.9978232          7.602648e-01
 ## AccuracyNull                 0.2844617          2.844617e-01
 ## AccuracyPValue               0.0000000          0.000000e+00
-## McnemarPValue                      NaN          1.276047e-62</code></pre>
+## McnemarPValue                      NaN          5.219167e-30</code></pre>
 </div>
 <div id="submission" class="section level3">
 <h3>Submission</h3>
